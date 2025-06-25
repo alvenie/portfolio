@@ -49,9 +49,9 @@ const Navbar = () => {
         <ul ref={sideMenuRef} className={`flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition-all duration-500 
         ${isMenuOpen ? 'right-0' : '-right-64'}`}>
 
-            <div className='absolute right-6 top-6' onClick={toggleMenu}>
+            <button className='absolute right-6 top-6' onClick={toggleMenu}>
               <Image src={assets.close_black} alt='' className='w-5 cursior-pointer' />
-            </div>
+            </button>
             <li><a href="#top" className='font-Ovo' onClick={toggleMenu}>Home</a></li>
             <li><a href="#about" className='font-Ovo' onClick={toggleMenu}>About</a></li>
             <li><a href="#project" className='font-Ovo' onClick={toggleMenu}>Projects</a></li>
