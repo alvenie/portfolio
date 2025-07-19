@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react'
 import { assets } from '@/assets/assets'
 import Image from 'next/image'
 
-const Navbar = () => {
+export default function Navbar() {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const sideMenuRef = useRef<HTMLUListElement>(null);
@@ -18,7 +18,7 @@ const Navbar = () => {
       </div>
       <nav className='w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50'>
         <a href="#top">
-            <h1 className='w-28 cursor-pointer mr-14 text-4xl'>
+            <h1 className='w-28 cursor-pointer mr-14 ml-10 text-4xl'>
               Alven
             </h1>
         </a>
@@ -62,5 +62,3 @@ const Navbar = () => {
     </>
   )
 }
-
-export default Navbar
